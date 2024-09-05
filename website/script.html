@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ягоды - Интернет-магазин одежды</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Подключаем стили -->
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input id="searchInput" type="text" placeholder="Поиск по сайту...">
+            <button onclick="searchProducts()">Найти</button>
+        </div>
+        <h1>Ягоды</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Наши товары</h2>
+        <div id="productGrid" class="product-grid">
+            <!-- Пример карточек товаров -->
+            <div class="product-item">
+                <img src="../images/product1.jpg" alt="трусы">
+                <h3>Трусы с бабочкой</h3>
+                <p>100 ₽</p>
+                <button onclick="showModal(this)">Купить</button>
+            <div class="product-item">
+                <img src="../images/product2.jpg" alt="трусики">
+                <h3>вязаный слоник</h3>
+                <p>150 ₽</p>
+                <button onclick="showModal(this)">Купить</button>
+            </div>
+            <div class="product-item">
+                <img src="../images/product3.jpg" alt="труханы">
+                <h3>слоник2.0</h3>
+                <p>2000 ₽</p>
+                <button onclick="showModal(this)">Купить</button>
+            </div>
+            <div class="product-item">
+                <img src="../images/product4.jpg" alt="Товар 4">
+                <h3>супермен</h3>
+                <p>2500 ₽</p>
+                <button onclick="showModal(this)">Купить</button>
+            </div>
+            <div class="product-item">
+                <img src="../images/product5.jpg" alt="трусики">
+                <h3>поп звезда</h3>
+                <p>15000 ₽</p>
+                <button onclick="showModal(this)">Купить</button>
+            </div>
+            <div class="product-item">
+                <img src="../images/product6.jpg" alt="Товар Н">
+                <h3>класика бокса</h3>
+                <p>228 ₽</p>
+                <button>Купить</button>
+            </div>
+            <div class="product-item">
+                <img src="../images/product7.jpg" alt="труханы">
+                <h3>бабкины модные</h3>
+                <p>20 ₽</p>
+                <button onclick="showModal(this)">Купить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Увеличенное изображение">
+        </div>
+        <div class="telegram-link">
+            <a href="https://t.me/tatytityty" target="_blank">Перейти в наш Telegram канал</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Увеличенное изображение">
+        </div>
+        <div class="telegram-link">
+            <a href="https://t.me/tatytityty" target="_blank">Перейти в наш Telegram канал</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ягоды. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Подключаем скрипты -->
+</body>
+</html>
